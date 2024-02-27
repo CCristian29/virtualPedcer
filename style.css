@@ -5,7 +5,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
+body.iniciar-sesion{
     height: 100vh;
     display: flex;
     align-items: center;
@@ -124,16 +124,52 @@ body {
 
 .formulario input[type="button"] {
     width: 60%;
-    margin: auto;
-    border: solid thin white;
+    margin: auto;  
     padding: .7rem;
     border-radius: 2rem;
-    background-color: white;
+    background-color: #df6400;
     font-weight: 600;
-    margin-top: 3rem;
-    font-size: .8rem;
+    margin-top: .2rem;
+    font-size: .9rem;
     cursor: pointer;
-    color: #222;
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: all .3s ease-in;
+}
+.formulario input[type="button"]:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.terminos-label input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.terminos-label input[type="checkbox"] + span {
+  font-size: .9rem;
+  background-color: #df6400;
+}
+
+
+.terminos-label input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  
+}
+
+/* Estilo cuando el checkbox está marcado */
+.terminos-label input[type="checkbox"]:checked + span::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 3px;
 }
 
 .sign-in {
@@ -170,4 +206,167 @@ video{
     background: #1c1c1d;
     opacity: 0.5;
     mix-blend-mode: overlay;
+}
+
+/* productos*/
+body.productos{
+    font-family: sans-serif;
+  }
+#pg-productos{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+  background-color: black;
+  height: 120px;
+  width: 100%;
+  top: auto;
+  left: auto;
+
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.nav-link{
+  color: orange;
+  text-decoration: none;
+}
+.logo{
+  width: 90px;
+  height: 90px;
+}
+.fa-user{
+  font-size: 3em;
+  margin-top: 10px;
+}
+.fa-cart-shopping{
+  font-size: 3em;
+  margin-top: 10px;
+}
+
+.nav-menu{
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.navmenu-item{
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+.nav-menulink{
+  padding: 8px 12px;  
+  border-radius: 100px;
+}
+.nav-menulink:hover{
+  background-color: white;
+  transition: 0.5s;
+
+}
+
+/*Aqui empieza la sección de las imagenes de las cervezas*/
+.cer1{
+    height: 700px;
+    width: 100%;
+    background-image: url("./img/img-productos/moscura.jpg");
+  }
+  .cimg{
+    float:left;
+    height: 500px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.808);
+    position: relative;
+    top: 50px;
+    left: 50px;
+    border-radius: 20px;
+  }
+  .imagen{
+    background-image: url("./img/img-productos/cerveza1.png");
+    height: 500px;
+    width: 360px;
+  }
+  .infoc{
+    position: relative;
+    top: 50px;
+    right: 50px;
+    background-color: rgba(0, 0, 0, 0.808);
+    height: 500px;
+    width: 900px;
+    float: right;
+    border-radius: 20px;
+  }
+  .icono1{
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    position: relative;
+    top: 100px;
+    left: 200px;
+    float: left;
+  }
+  .fa-wheat-awn{
+    font-size: 3em;
+  }
+  .isabor{
+    position: relative;
+    top: 20px;
+    color: white;
+  }
+  .icono2{
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    position: relative;
+    top: 100px;
+    right: 200px;
+    float: right;
+  }
+  .ialcohol{
+    position: relative;
+    top: 20px;
+    color: white;
+  }
+  .fa-beer-mug-empty{
+    font-size: 3em;
+  }
+  .texto{
+    color: white;
+    position: relative;
+    top: 280px;
+  }
+  
+  /*boton comprar*/
+  .boton {
+    position: relative;
+    top: 330px;
+    left: 367px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange; 
+    color: #ffffff; 
+    text-decoration: none;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  
+  .boton:hover {
+    background-color: white; 
+    color: orange;
+    transition: 0.5s;
+  }
+  @media (max-width: 768px) {
+    /* Aquí puedes colocar estilos específicos para pantallas más pequeñas */
+    .container-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+    /* Otros estilos... */
 }
